@@ -34,9 +34,6 @@ def calculate_average(numbers):
         # Avoid division by zero if no valid numbers found
         if count == 0:
             return 0
-        # Handle case where total is 0 to prevent potential division issues
-        if total == 0:
-            return 0
         return total / count
     except (TypeError, AttributeError):
         return 0
